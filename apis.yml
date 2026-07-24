@@ -1,8 +1,29 @@
 aid: catchback-cards
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/catchback-cards.png
 name: Catchback Cards
-description: Catchback Cards is a company surfaced as a portfolio company of y-combinator and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Catchback Cards (CatchBack) is a Y Combinator (Winter 2026) company building a mobile and web
+  platform for trading card collectors, focused on Pokemon and sports cards. Collectors open digital
+  mystery packs to receive physical cards, receive instant buyback offers paid out via Venmo or PayPal,
+  and trade cards through a $1 marketplace. The platform differentiates on transparency: it lets
+  creators build custom mystery packs with personalized chases and customized odds using
+  cryptographically trusted tooling, and publishes open-source verification so collectors can
+  independently validate pack randomness and odds. The company launched its iOS app on January 25, 2026
+  and is a seven-person team based in San Francisco. Catchback Cards is a consumer application and does
+  not currently publish a public API, developer portal, or OpenAPI definition; this profile is
+  maintained in the API Evangelist network as a portfolio lead and is enriched only with independently
+  verifiable facts.
 url: https://raw.githubusercontent.com/api-evangelist/catchback-cards/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +31,34 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-batch: W26
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Trading Cards
+- Collectibles
+- Marketplace
+- Consumer
+- Mobile
+- Payments
+- Y Combinator
+common:
+- type: DomainSecurity
+  url: security/catchback-cards-domain-security.yml
+- type: Website
+  url: https://catchbackcards.com
+- type: GitHubOrganization
+  url: https://github.com/CatchBack-Cards
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
